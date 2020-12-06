@@ -1,4 +1,3 @@
-package Array;
 
 // 11 盛最多水的容器
 public class MaxArea {

@@ -1,6 +1,4 @@
-package Array;
-
-import java.util.Arrays;
+package practice.Array;
 
 // 283. 移动零
 

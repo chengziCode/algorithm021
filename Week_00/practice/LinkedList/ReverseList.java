@@ -1,4 +1,4 @@
-package LinkedList;
+package practice.LinkedList;
 
 
 // 206 反转链表

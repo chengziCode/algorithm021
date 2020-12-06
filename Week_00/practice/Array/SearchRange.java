@@ -1,4 +1,4 @@
-package Array;
+package practice.Array;
 
 public class SearchRange {
     // 34
