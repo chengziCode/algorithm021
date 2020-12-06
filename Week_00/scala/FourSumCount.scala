@@ -2,6 +2,10 @@ import scala.collection.mutable
 
 object FourSumCount {
 
+  def main(args: Array[String]): Unit = {
+    print("nihao")
+  }
+
   def fourSumCount(A: Array[Int], B: Array[Int], C: Array[Int], D: Array[Int]): Int = {
     val map = new mutable.HashMap[Int, Int]
     var cnt = 0
