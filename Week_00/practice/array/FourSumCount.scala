@@ -1,10 +1,10 @@
+package practice.array
+
 import scala.collection.mutable
 
-object FourSumCount {
 
-  def main(args: Array[String]): Unit = {
-    print("nihao")
-  }
+// 四数之和
+object FourSumCount {
 
   def fourSumCount(A: Array[Int], B: Array[Int], C: Array[Int], D: Array[Int]): Int = {
     val map = new mutable.HashMap[Int, Int]

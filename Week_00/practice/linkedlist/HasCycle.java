@@ -1,4 +1,4 @@
-package practice.LinkedList;
+package practice.linkedlist;
 
 import java.util.HashSet;
 

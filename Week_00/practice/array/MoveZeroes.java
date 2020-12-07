@@ -1,4 +1,4 @@
-package practice.Array;
+package practice.array;
 
 // 283. 移动零
 

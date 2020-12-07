@@ -1,4 +1,4 @@
-package practice.Array;
+package practice.array;
 //70 爬楼梯
 
 public class ClimbStairs {
