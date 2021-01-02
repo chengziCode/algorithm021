@@ -1,6 +1,6 @@
 package practice.tree;
 
-import Utils.Utils;
+import utils.Utils;
 
 import java.util.Comparator;
 import java.util.HashMap;

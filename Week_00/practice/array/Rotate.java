@@ -1,7 +1,5 @@
 package practice.array;
 
-import Utils.Utils;
-
 //189 旋转数组  https://leetcode-cn.com/problems/rotate-array/
 public class Rotate {
 
