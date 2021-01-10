@@ -1,4 +1,4 @@
-package practice.tree.dfs_bfs;
+package practice.tree;
 
 import java.util.ArrayList;
 import java.util.List;

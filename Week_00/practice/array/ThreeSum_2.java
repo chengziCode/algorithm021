@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 
-// 15 三数之和
-public class ThreeSum {
+// 15 三数之和   https://leetcode-cn.com/problems/3sum/
+public class ThreeSum_2 {
     public List<List<Integer>> threeSum(int[] nums) {
 
         if (nums.length < 3) {

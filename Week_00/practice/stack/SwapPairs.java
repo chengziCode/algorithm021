@@ -2,7 +2,7 @@ package practice.stack;
 
 import java.util.Stack;
 
-// 24 两两交换链表中的节点
+// 24 两两交换链表中的节点    https://leetcode-cn.com/problems/swap-nodes-in-pairs/
 public class SwapPairs {
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package practice.array;
 
-// 66 加1
+// 66 加1  https://leetcode-cn.com/problems/plus-one/
 public class PlusOne {
     public static void main(String[] args) {
 

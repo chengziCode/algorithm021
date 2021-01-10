@@ -11,11 +11,11 @@ public class Combine {
         combine.forEach(System.out::println);
     }
 
-    public List<List<Integer>> combine(int n, int k) {
-        /**
-         * 像列举出所有组合的题，是经典的回溯算法题，可以根据dfs的思想来解题。
-         */
 
+    /**
+     * 像列举出所有组合的题，是经典的回溯算法题，可以根据dfs的思想来解题。
+     */
+    public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> resList = new ArrayList<>();
         dfs(1, n, k, new ArrayList<Integer>(), resList);
         return resList;

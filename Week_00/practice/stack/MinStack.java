@@ -1,7 +1,7 @@
 package practice.stack;
 
 import java.util.Stack;
-//155  最小栈
+//155  最小栈  https://leetcode-cn.com/problems/min-stack/
 public class MinStack {
     Stack<Integer> stack;
     int minValue;

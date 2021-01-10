@@ -17,6 +17,13 @@ public class Permute {
         return resList;
     }
 
+    /**
+     * 回溯 dfs
+     * @param nums
+     * @param curList
+     * @param resList
+     * @param visited
+     */
     private void dfs(int[] nums, ArrayList<Integer> curList, List<List<Integer>> resList, int[] visited) {
         //recursion terminator
         if (curList.size() == nums.length) {

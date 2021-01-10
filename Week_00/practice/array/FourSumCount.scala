@@ -3,7 +3,8 @@ package practice.array
 import scala.collection.mutable
 
 
-// 四数之和
+//  454 四数相加 https://leetcode-cn.com/problems/4sum-ii/
+
 object FourSumCount {
 
   def fourSumCount(A: Array[Int], B: Array[Int], C: Array[Int], D: Array[Int]): Int = {

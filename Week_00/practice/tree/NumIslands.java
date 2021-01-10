@@ -1,4 +1,4 @@
-package practice.tree.dfs_bfs;
+package practice.tree;
 
 /**
  * 200 岛屿数量 https://leetcode-cn.com/problems/number-of-islands/
