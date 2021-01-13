@@ -2,7 +2,7 @@ package practice.array;
 
 
 // 26 删除排序数组中的重复项   https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
-public class RemoveDuplicates {
+public class RemoveDuplicates_2 {
 
 
     public int removeDuplicates(int[] nums) {

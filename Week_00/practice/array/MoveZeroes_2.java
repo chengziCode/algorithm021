@@ -2,7 +2,7 @@ package practice.array;
 
 // 283. 移动零     https://leetcode-cn.com/problems/move-zeroes/
 
-public class MoveZeroes {
+public class MoveZeroes_2 {
 
 
     public static void main(String[] args) {
@@ -14,26 +14,31 @@ public class MoveZeroes {
 
     }
 
+
+
     /**
-     * two points O(n)
+     * 双指针.  把不知零的数前挪动，最后补零。
      *
      * @param nums
      */
     public static void moveZeroes_twoPoints(int[] nums) {
-        int i = 0;
+
+        int p1 = 0, p2 = 0;
+        while (p2 < nums.length) {
+            if (nums[p2] != 0) nums[p1++] = nums[p2++];
+            else p2++;
+        }
+        while (p1 < nums.length) nums[p1++] = 0;
+
+        /*int i = 0;
         for (int j = 0; j < nums.length; j++) {
             if (nums[j] != 0) {
-                swapNums(nums, i++, j);
+                int swap = nums[i];
+                nums[i++] = nums[j];
+                nums[j] = swap;
             }
-        }
+        }*/
     }
-
-    private static void swapNums(int[] nums, int i, int j) {
-        int swap = nums[i];
-        nums[i] = nums[j];
-        nums[j] = swap;
-    }
-
 
     /**
      * O(n^2)

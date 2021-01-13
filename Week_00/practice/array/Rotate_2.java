@@ -1,11 +1,11 @@
 package practice.array;
 
 //189 旋转数组  https://leetcode-cn.com/problems/rotate-array/
-public class Rotate {
+public class Rotate_2 {
 
     public static void main(String[] args) {
         int[] a = new int[]{1, 2, 3, 4, 5, 6, 7};
-        new Rotate().rotate(a, 3);
+        new Rotate_2().rotate(a, 3);
 
 
     }
@@ -31,7 +31,20 @@ public class Rotate {
             }
         */
 
-        // 2 从第K个数开始循环替换后面的数。
+        // 2 循环替换，让座位
+        int count = 0;
+        for(int i = 0; count < nums.length; i++) {
+            int preValue = nums[i];
+            int nextIndex = i;
+            do {
+                nextIndex = (nextIndex + k) % nums.length;
+                int tmp = nums[nextIndex];
+                nums[nextIndex] = preValue;
+                preValue = tmp;
+                count++;
+            }while (nextIndex != i);
+        }
+
 
 
         // 4 非原地算法: 引入额外的数据
@@ -41,7 +54,5 @@ public class Rotate {
             System.arraycopy(nums, nums.length - k, res, 0, k);
             System.arraycopy(res, 0, nums, 0, nums.length);
         */
-
-
     }
 }
