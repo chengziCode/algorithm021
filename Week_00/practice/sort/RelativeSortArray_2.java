@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 //1122 数组的相对排序  https://leetcode-cn.com/problems/relative-sort-array/
-public class RelativeSortArray {
+public class RelativeSortArray_2 {
     public static void main(String[] args) {
 
 
@@ -48,6 +48,5 @@ public class RelativeSortArray {
                 res[index++] = key;
         }
         return res;
-
     }
 }

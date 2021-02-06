@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 //56 合并区间 https://leetcode-cn.com/problems/merge-intervals/
-public class MergeRange {
+public class MergeRange_2 {
     public static void main(String[] args) {
     }
 

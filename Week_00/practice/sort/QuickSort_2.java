@@ -2,7 +2,7 @@ package practice.sort;
 
 import utils.Utils;
 
-public class QuickSort {
+public class QuickSort_2 {
 
 
     public static void main(String[] args) {
@@ -28,22 +28,20 @@ public class QuickSort {
      * 目的是返回pivot, 首次默认以end作为pivot
      */
     private static int partition(int[] arr, int begin, int end) {
-        int pivot = end, curIndex = begin;
-        for (int i = begin; i < end; i++) {
-            if (arr[i] < arr[pivot])
+        int pivot = end;
+        int curIndex = begin;
+        for (int i = begin + 1; i < end; i++) {
+            if(arr[i] < arr[pivot])
                 swap(arr, curIndex++, i);
         }
-        
-        swap(arr, curIndex, pivot);
-
+        swap(arr, pivot, curIndex);
         return curIndex;
     }
 
-
-    private static void swap(int[] arr, int a, int b) {
-        int tmp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = tmp;
+    private static void swap(int[] arr, int i, int j) {
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
     }
 
 
