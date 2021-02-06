@@ -1,11 +1,11 @@
 package practice.array;
 
 //189 旋转数组  https://leetcode-cn.com/problems/rotate-array/
-public class Rotate_2 {
+public class Rotate_3_need {
 
     public static void main(String[] args) {
         int[] a = new int[]{1, 2, 3, 4, 5, 6, 7};
-        new Rotate_2().rotate(a, 3);
+        new Rotate_3_need().rotate(a, 3);
 
 
     }
@@ -32,7 +32,7 @@ public class Rotate_2 {
         */
 
         // 2 循环替换，让座位
-        int count = 0;
+        int count = 0; //换座位次数，每个人换一次就算是完成了。即 count = nums.length
         for(int i = 0; count < nums.length; i++) {
             int preValue = nums[i];
             int nextIndex = i;
@@ -45,6 +45,27 @@ public class Rotate_2 {
             }while (nextIndex != i);
         }
 
+
+        /*
+
+        //用的 while， 而不是do while。  当nextIndex = i时，需要在跳出循环时给nums[i]赋值，count++
+        k = k % nums.length;
+        int count = 0;
+
+        for (int i = 0; count < nums.length; i++) {
+            int preValue = nums[i];
+            int nextIndex = (i + k) % nums.length;
+
+            while (i != nextIndex) {
+                int tmp = nums[nextIndex];
+                nums[nextIndex] = preValue;
+                preValue = tmp;
+                nextIndex = (nextIndex + k) % nums.length;
+                count++;
+            }
+            nums[i] = preValue;
+            count++;
+        }*/
 
 
         // 4 非原地算法: 引入额外的数据
